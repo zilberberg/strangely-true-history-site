@@ -1,0 +1,6 @@
+body { margin: 0; background: #0d0a07; color: #eadfcb; font: 16px/1.6 Georgia, "Times New Roman", serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px; }
+h1 { letter-spacing: 0.04em; }
+h2 { font-size: 18px; margin-top: 32px; }
+a { color: #e0b066; }
+.muted { color: #8a7d68; }
