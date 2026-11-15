@@ -9,13 +9,26 @@
 <body>
   <main>
     <h1>Privacy policy</h1>
-    <p class="muted">Last updated: 1 November 2026</p>
+    <p class="muted">Last updated: 15 November 2026</p>
 
     <p>Strangely True Stats is a private tool used by a single person, the owner of the Strangely True History
-      channel, on their own computer. This policy describes how it handles Google user data.</p>
+      channel, on their own computer. It publishes the owner's own videos to the owner's own YouTube channel and
+      reads that channel's statistics. This policy describes how it handles Google user data.</p>
 
-    <h2>Data accessed</h2>
-    <p>With the owner's explicit consent through Google's sign-in screen, Strangely True Stats reads, read-only:</p>
+    <h2>Publishing to YouTube</h2>
+    <p>With the owner's explicit consent through Google's sign-in screen (the <code>youtube.upload</code> scope),
+      Strangely True Stats uses the <strong>YouTube Data API</strong> to:</p>
+    <ul>
+      <li>upload the owner's own finished videos to the owner's own channel (<code>videos.insert</code>), with their
+        title, description, tags, privacy status, scheduled release time and altered-or-synthetic-content
+        declaration;</li>
+      <li>set the custom thumbnail of those videos (<code>thumbnails.set</code>).</li>
+    </ul>
+    <p>It never uploads to, changes or deletes anything on any other channel, and it does not change or delete
+      existing videos.</p>
+
+    <h2>Statistics read</h2>
+    <p>With the same kind of consent, Strangely True Stats reads, read-only:</p>
     <ul>
       <li><strong>YouTube Data API:</strong> the owner's own channel and its videos (titles, publish dates, view, like
         and comment counts).</li>
@@ -25,11 +38,11 @@
     <p>With the same consent through TikTok's sign-in screen, it reads the owner's own TikTok account, read-only:
       profile statistics (followers, likes, video count) and the owner's public videos with their view, like, comment
       and share counts.</p>
-    <p>It does not upload, change or delete anything, and it does not access any other account or user.</p>
+    <p>It does not access any other account or user, and it collects no data about viewers.</p>
 
     <h2>How the data is used</h2>
-    <p>The data is used only to show the owner how their own videos perform. It is processed and stored only on the
-      owner's own computer.</p>
+    <p>The data is used only to publish the owner's own videos and to show the owner how they perform. It is
+      processed and stored only on the owner's own computer.</p>
 
     <h2>Sharing</h2>
     <p>Google and TikTok user data is not sold, shared with, or transferred to any third party, is not used for advertising,
@@ -41,9 +54,13 @@
       <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
     <h2>Storage, retention and deletion</h2>
-    <p>Data is kept in local files on the owner's computer until the owner deletes them.
-      Access can be revoked at any time at
-      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p>The only Google data kept is the sign-in token, the ID, link and status of each uploaded video, and the
+      statistics read. All of it is kept in local files on the owner's computer, never on a server, and is deleted
+      when the owner deletes those files or revokes access. Statistics are refreshed, and old copies replaced, on
+      each read.</p>
+    <p>Access can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; the stored token
+      then stops working, and the owner deletes it from the computer.</p>
 
     <h2>Contact</h2>
     <p>Questions about this policy: <a href="https://www.youtube.com/@StrangelyTrueHistory">the Strangely True History
